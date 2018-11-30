@@ -1,0 +1,20 @@
+{
+  "name": "ts-design-pattern",
+  "version": "1.0.0",
+  "description": "ts design pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc && ava"
+  },
+  "keywords": [
+    "ts",
+    "design",
+    "pattern"
+  ],
+  "author": "wwmin",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "typescript": "^3.2.1"
+  }
+}
