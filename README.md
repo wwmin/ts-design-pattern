@@ -1,7 +1,9 @@
 js 的设计模式是经常使用的,但是最近在转 ts,所以就打算用 ts 重写 js 的设计模式. 说是重写其实也是模仿.
+
 主要技术点: [webpack](https://webpack.docschina.org/) + [typescrpt](https://www.tslang.cn/) + [jest](https://jestjs.io/docs/zh-Hans/getting-started) + [ts-jest](https://github.com/kulshekhar/ts-jest)
 
 使用 jest 测试的原因是使用和配置相对简单,并且支持 ts 文件(不需要编译成 js 文件后测试),也是 react 的推荐测试框架(毕竟 facebook 自己产品).
+
 好了开始我们的旅程.
 
 # 创建 package.json 文件及配置
@@ -215,7 +217,8 @@ test("playing to be true", () => {
   expect(player.play("vlc", "cc.vlc")).toBe(true);
 });
 ```
-*关于jest的使用请参考 [jest](https://jestjs.io/docs/zh-Hans/using-matchers)*
+
+_关于 jest 的使用请参考 [jest](https://jestjs.io/docs/zh-Hans/using-matchers)_
 
 # 完成代码后开始测试
 
@@ -247,5 +250,5 @@ Ran all test suites.
 
 可以看到绿色的 passed 字样,如果测试没有通过则会有红色的错误提示.
 
-好了,这就完成了ts版的设计模式库的搭建,后面就要继续将设计模式慢慢补充完整,
-代码就不放上去了,
+好了,这就完成了 ts 版的设计模式库的搭建,后面就要继续将设计模式慢慢补充完整,
+代码可以参考我的[github](https://github.com/wwmin/ts-design-pattern) `https://github.com/wwmin/ts-design-pattern`
