@@ -14,3 +14,7 @@ yarn-error.log*
 *.sln
 *.map
 *.apk
+
+# src/.js
+/src/*.js
+test/*.js
