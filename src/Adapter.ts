@@ -58,8 +58,3 @@ export class AudioPlayer implements MediaPlayer {
     }
   }
 }
-
-let player = new AudioPlayer();
-player.play("mp3", "aa.mp3");
-player.play("vlc", "bb.vlc");
-player.play("mp4", "cc.mp4");
