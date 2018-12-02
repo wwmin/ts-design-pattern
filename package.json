@@ -4,8 +4,7 @@
   "description": "ts design pattern",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "ava": "tsc && ava"
+    "test": "jest"
   },
   "keywords": [
     "ts",
