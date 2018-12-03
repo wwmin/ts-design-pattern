@@ -1,3 +1,5 @@
+// 适配器模式
+
 interface MediaPlayer {
   play(type: string, fileName: string): void;
 }
