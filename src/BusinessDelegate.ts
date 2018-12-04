@@ -17,6 +17,7 @@ class JMSService implements BusinessService {
   }
 }
 
+// 查询服务
 class BusinessLookUp {
   public getBusinessService(serviceType: string): BusinessService {
     if (serviceType.toLocaleLowerCase() === "ejb") {
@@ -27,6 +28,7 @@ class BusinessLookUp {
   }
 }
 
+// 业务代表
 export class BusinessDelegate {
   private lookUpService: BusinessLookUp = new BusinessLookUp();
   private businessService: BusinessService = {} as BusinessService;
