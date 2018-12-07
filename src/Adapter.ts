@@ -33,14 +33,12 @@ class MediaAdapter implements MediaPlayer {
       this.player = new Mp4Player(); // 默认使用mp4player
     }
   }
-  play(type: string, fileName: string) {
+  play(type: string, fileName: string): void {
     // 因为特定的播放类有特定的播放方法，所以还需要再根据type调用特定的播放类
     if (type === "vlc") {
       if (this.player.playVlc) this.player.playVlc(fileName);
     } else if (type === "mp4") {
       if (this.player.playMp4) this.player.playMp4(fileName);
-    } else {
-      return null;
     }
   }
 }
