@@ -1,4 +1,4 @@
-import { Facade } from "../src/facade";
+import { Facade } from "../src/Facade";
 
 test("facade: shape", () => {
   let sm = new Facade.ShapeMaker();
